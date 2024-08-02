@@ -32,7 +32,7 @@ print(f'Test data shape: {test_images.shape}, Test labels shape: {test_labels.sh
 train_images = train_images.reshape(train_images.shape[0], -1) / 255.0
 test_images = test_images.reshape(test_images.shape[0], -1) / 255.0
 
-train(train_images, train_labels, epochs=2, batch_size=32, learning_rate=0.01)
+train(train_images, train_labels, epochs=2, batch_size=32, learning_rate=0.1)
 
 def plot_test_predictions():
     num_images = 5
